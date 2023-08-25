@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+<!--    <com.facebook.drawee.view.SimpleDraweeView-->
+<!--        android:id="@+id/draweeView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_weight="1"-->
+<!--        app:placeholderImage="@drawable/baseline_image_24"-->
+<!--        app:placeholderImageScaleType="fitXY"-->
+<!--        app:roundedCornerRadius="20dp"/>-->
+
+    <ImageView
+        android:id="@+id/imageViewSource"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/baseline_image_24"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/textViewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editUrl"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="이미지 URL을 입력하세요"/>
+
+        <ImageView
+            android:id="@+id/imageViewSearch"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_image_search_24"
+            android:scaleType="center"/>
+    </LinearLayout>
+
+
+</LinearLayout>
