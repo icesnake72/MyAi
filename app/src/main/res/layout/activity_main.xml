@@ -26,26 +26,22 @@
     <TextView
         android:id="@+id/textViewInfo"
         android:layout_width="match_parent"
-        android:layout_height="50dp"/>
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/editUrl"
+
+        <ImageButton
+            android:id="@+id/imageButtonSearch"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:hint="이미지 URL을 입력하세요"/>
-
-        <ImageView
-            android:id="@+id/imageViewSearch"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:src="@drawable/baseline_image_search_24"
-            android:scaleType="center"/>
+            android:background="#FF9800"
+            app:srcCompat="@drawable/baseline_image_search_24"/>
     </LinearLayout>
 
 
